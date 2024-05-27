@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Bodoni Oldstyle';
+    font-family: "Bodoni 72 Oldstyle";
     src: url(typefaces/Bodoni72-OldStyle.ttc) format('ttc');
     font-style: normal;
     font-weight: normal;
@@ -20,18 +20,29 @@
 }
 
 p {
-    font-family: "Bodoni Oldstyle";
+    font-family: "Bodoni 72 Oldstyle";
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    color: #231F23;
+    font-family: "OPTIPosterBodoni-Compr";
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
 /*styling the banner section*/
-.banner-image-container {
+.banner-image-container, .bestsellers-container,
+.our-collections-container, .set-bundles-container {
     border-bottom: 4px solid #231F23;
-    border-width: 80%;
 }
 
 .banner-image {
@@ -46,6 +57,7 @@ p {
     padding-bottom: 2rem;
     border-bottom: 4px solid #231F23;
     border-width: 80%;
+    align-items: center;
 }
 
 #intro-para {
@@ -54,12 +66,75 @@ p {
     border-right: 4px solid #231F23;
 }
 
-
-
-
-.h1 {
-
+.button {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: OPTIPosterBodoni-Compr ;
+    background-color: #231F23;
+    color: #9184A0;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration: none;
+    border-radius: 60px;
+    text-align: center;
+    height: 60px;
+    margin-left: 4rem;
 }
+
+.bestsellers-container, .our-collections-container,
+.set-bundles-container {
+    margin-bottom: 20px;
+    display: flex; /* Use Flexbox to create a horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start; /* Center the items horizontally */
+}
+
+.product-card {
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 2px solid #231F23; /* Table outline */
+    margin: 20px auto;
+    width: 300px; /* Adjust the width as needed */
+}
+
+.product-card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card-des {
+    display: flex;
+    border-top: 2px solid #231F23;
+}
+
+.name-description, .arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.name-description, .prices {
+    font-family: OPTIPosterBodoni-Compr;
+    font-size: 2rem;
+}
+
+.name-description {
+    text-align: left;
+}
+
+.prices, .arrow {
+    text-align: right;
+}
+
+
 
 
 /* iPhone 12 Pro Portrait (390 x 844) */
