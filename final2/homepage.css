@@ -1,3 +1,99 @@
 @import url(reset.css);
 
+@font-face {
+    font-family: 'BodoniPoster';
+    src: url(typefaces/OPTIPosterBodoni-Compr.otf) format('otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni Oldstyle';
+    src: url(typefaces/Bodoni72-OldStyle.ttc) format('ttc');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    background-color: #9184A0;
+    color: #231F23;
+}
+
+p {
+    font-family: "Bodoni Oldstyle";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+/*styling the banner section*/
+.banner-image-container {
+    border-bottom: 4px solid #231F23;
+    border-width: 80%;
+}
+
+.banner-image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduction {
+    display: flex;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 4px solid #231F23;
+    border-width: 80%;
+}
+
+#intro-para {
+    width: 50%;
+    padding-right: 4rem;
+    border-right: 4px solid #231F23;
+}
+
+
+
+
+.h1 {
+
+}
+
+
+/* iPhone 12 Pro Portrait (390 x 844) */
+@media (max-width: 390px) and (max-height: 844px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        margin: 0.2rem 0;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+}
+
+/* Surface Pro 7 Landscape (1368 x 912) */
+@media (max-width: 1368px) and (min-height: 912px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
+
 
