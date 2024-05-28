@@ -44,16 +44,13 @@ h1 {
 }
 
 .description, .collection-container {
-    margin-bottom: 20px;
     display: flex; 
     flex-wrap: wrap;
-}
-
-#our-collections-container {
     border-bottom: #231F23 4px solid;
     margin: 20px;
     padding-bottom: 2rem;
 }
+
 
 .description {
     margin: 20px;
