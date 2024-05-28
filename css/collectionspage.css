@@ -24,6 +24,7 @@
 
 p {
     font-family: "Bodoni 72 Oldstyle";
+    color:#231F23;
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 400;
@@ -37,6 +38,76 @@ h1 {
     font-size: 72px;
     font-weight: 500;
     line-height: normal;
-    margin: 1rem;
-
+    margin: 20px;
+    border-bottom: 4px solid #231F23;
+    padding-bottom: 1rem;
 }
+
+.description, .collection-container {
+    margin-bottom: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+#our-collections-container {
+    border-bottom: #231F23 4px solid;
+    margin: 20px;
+    padding-bottom: 2rem;
+}
+
+.description {
+    margin: 20px;
+    border-bottom: 4px solid #231F23;
+    padding-bottom: 1rem;
+}
+
+.product-card {
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 2px solid #231F23; 
+    margin: 5px auto;
+    width: 17rem; 
+}
+
+
+.product-card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    max-height: 75%;
+    align-items: center;
+}
+
+.product-card-des {
+    display: flex;
+    border-top: 2px solid #231F23;
+}
+
+.name-description, .arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.name-description, .prices {
+    font-family: OPTIPosterBodoni-Compr;
+    color: #231F23;
+    font-size: 2rem;
+}
+
+.name-description {
+    text-align: left;
+}
+
+.prices, .arrow {
+    padding-left: 1rem;
+    align-content: center;
+}
+
+.arrow {
+    width: 75px;
+    border-left: #231F23 2px solid;
+}
+
+

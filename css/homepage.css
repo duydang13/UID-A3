@@ -24,6 +24,7 @@
 
 p {
     font-family: "Bodoni 72 Oldstyle";
+    color: #231F23;
     font-style: normal;
     font-size: 1.5rem;
     font-weight: 400;
@@ -92,6 +93,8 @@ h1 {
     margin-left: 4rem;
 }
 
+/*styling the rest of the sections*/
+
 .bestsellers-container, .our-collections-container,
 .set-bundles-container {
     margin-bottom: 20px;
@@ -130,6 +133,7 @@ h1 {
 
 .name-description, .prices {
     font-family: OPTIPosterBodoni-Compr;
+    color: #231F23;
     font-size: 2rem;
 }
 
