@@ -1,0 +1,34 @@
+footer {
+    background-color: #231F23;
+    height: 250px;
+    position: relative;
+}
+
+.footer-logo {
+    width: 120px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.footer-menu {
+    float: right;
+    color: #9184A0;
+    padding-right: 1rem;
+    padding-top: 30px;
+}
+.footer-menu td{
+    font-family: "Bodoni 72 Oldstyle";
+    font-size: 20px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+}
+.social-media {
+    display: flex;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.social-media img {
+    padding-right: 10px;
+}
