@@ -1,0 +1,176 @@
+@import url(/css/reset.css);
+@import url(/css/footer.css);
+@import url(/css/header.css);
+
+@font-face {
+    font-family: 'BodoniPoster';
+    src: url(typefaces/OPTIPosterBodoni-Compr.otf) format('otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bodoni 72 Oldstyle";
+    src: url(typefaces/Bodoni72-OldStyle.ttc) format('ttc');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    background-color: #9184A0;
+    color: #231F23;
+    color: #63596F;
+}
+
+p {
+    font-family: "Bodoni 72 Oldstyle";
+    color: #231F23;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+h1{
+    color: #231F23;
+    font-family: "OPTIPosterBodoni-Compr";
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 1rem;
+}
+
+.title {
+    margin-bottom: 20px;
+    border-bottom: #231F23 4px solid;
+    padding-bottom: 20px;
+}
+
+.description {
+    margin: 20px;
+    border-bottom: #231F23 4px solid;
+    padding-bottom: 20px;
+}
+
+
+/*styling the product section*/
+.product-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.product-card {
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 2px solid #231F23; 
+    margin: 15px auto;
+    width: 17rem; 
+}
+
+.product-card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    max-height: 75%;
+    align-items: center;
+}
+
+.product-card-des {
+    display: flex;
+    border-top: 2px solid #231F23;
+}
+
+.name-description, .arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.name-description, .prices {
+    font-family: OPTIPosterBodoni-Compr;
+    color: #231F23;
+    font-size: 2rem;
+}
+
+.name-description {
+    text-align: left;
+    border-right: 2px solid #231F23;
+}
+
+.prices {
+    padding-left: 1rem;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-bar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-bar li {
+        margin-right: 0;
+    }
+
+    .menu-bar li a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        padding-right: 0;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu-bar li a {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+}
+
+@media(max-width:768px){
+    .product-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:480px){
+    .product-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
