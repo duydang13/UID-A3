@@ -41,8 +41,11 @@ h1 {
 
 /*styling the banner section*/
 .banner-image-container, .bestsellers-container,
-.our-collections-container, .set-bundles-container {
+.our-collections-container, .introduction {
     border-bottom: 4px solid #231F23;
+    padding-bottom: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .banner-image {
@@ -91,22 +94,22 @@ h1 {
     margin-bottom: 20px;
     display: flex; /* Use Flexbox to create a horizontal layout */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: flex-start; /* Center the items horizontally */
 }
 
 .product-card {
     display: grid;
     grid-template-rows: auto auto;
     border: 2px solid #231F23; /* Table outline */
-    margin: 20px auto;
-    width: 300px; /* Adjust the width as needed */
+    margin: 10px auto;
+    width: 18rem; 
 }
 
 .product-card img {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    max-width: 75%;
+    max-height: 75%;
+    align-items: center;
 }
 
 .product-card-des {
@@ -128,10 +131,61 @@ h1 {
 
 .name-description {
     text-align: left;
+    border-right: 2px solid #231F23;
 }
 
 .prices, .arrow {
-    text-align: right;
+    padding-left: 1rem;
+    align-content: center;
+}
+
+.arrow {
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+/*styling the footer*/
+
+footer {
+    background-color: #231F23;
+    height: 250px;
+    position: relative;
+}
+
+.footer-logo {
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.footer-menu {
+    float: right;
+    color: #9184A0;
+    padding-right: 1rem;
+    padding-top: 30px;
+}
+.footer-menu td{
+    font-family: "Bodoni 72 Oldstyle";
+    font-size: 20px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+}
+.social-media {
+    display: flex;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.social-media img {
+    padding-right: 10px;
 }
 
 
