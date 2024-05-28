@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const products = [
+/*creating a list of products, storing them and creating a div for each*/
+document.addEventListener('DOMContentLoaded', function() {
+    const product = [
         { imgSrc: "/images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00" },
         { imgSrc: "/images/koala.png", alt: "koala", name: "CHOCOLATE KOALA", price: "from $29.95" },
         { imgSrc: "/images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00" },
@@ -15,17 +16,54 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const productContainer = document.getElementById('product-container');
-    products.forEach(product => {
-        const productCard= document.createElement('div');
-        productCard.classList.add('product-card');
-        productCard.innerHTML=`
-            <img src="${product.imgSrc}" alt="${product.alt}">
-            <div class="product-card-des">
-                <h2 class="name-description">${product.name.replace(" ", "<br>")}</h2>
-                <h2 class="prices">${product.price}</h2>
-            </div>
-        `;
 
-        productContainer.appendChild(productCard);
+    function createProductCard(){
+        product.forEach(product => {
+            const productCard= document.createElement('div');
+            productCard.classList.add('product-card');
+            productCard.innerHTML=`
+                <img src="${product.imgSrc}" alt="${product.alt}">
+                <div class="product-card-des">
+                    <h2 class="name-description">${product.name.replace(" ", "<br>")}</h2>
+                    <h2 class="prices">${product.price}</h2>
+                </div>
+            `;
+    
+            productContainer.appendChild(productCard);
+        });
+    };
+
+
+    function hideProducts(){
+    const products = document.querySelectorAll(".product-card");
+    const seeMoreButton = document.getElementById("see-more");
+    seeMoreButton.style.display = "block";
+
+    if (products.length>6) {
+        /*Hide the products at first*/
+    for (let i = products.length-6; i< products.length; i++) {
+        if (products[i]){
+            products[i].style.display = "none";
+        }
+    } 
+    /*Add a click event listener to the see more button to reveal more products*/
+    seeMoreButton.addEventListener("click", function(){
+        for (let i = products.length-6; i< products.length; i++) {
+        if (products[i]){
+            products[i].style.display = "grid";
+            }
+        }
+    /*Hide the see more button*/
+    seeMoreButton.style.display= "none";
     });
+    } else {
+        seeMoreButton.style.display = "none";
+    }
+}
+
+createProductCard(product);
+hideProducts();
 });
+
+
+
