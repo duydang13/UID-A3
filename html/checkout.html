@@ -58,61 +58,89 @@
 
 <script src="/javascript/addtocart.js"></script>
 
-
-    <div class="order-summary">
-        <h1>Order Summary</h1>
-    </div>
-
-
-
-    <div class="info-container">
-        <div class="info-container sidebar">
-            <form action="#" class="customer-info" id="customer-info">
-                <h1 class="title">Customer Information</h1>
-                <h3 class="subtitle">First Name<em>*</em></h3>
-                <input type="text" name="first-name" class="input" placeholder="John">
-                <h3 class="subtitle">Last Name<em>*</em></h3>
-                <input type="text" name="last-name" class="input" placeholder="Smith">
-                <h3 class="subtitle">Email Address <em>*</em></h3>
-                <input type="email" name="email" class="input" placeholder="john.smith@gmail.com">
-            </form>
-            <form action="#" class="shipping-info">
-                <h1 class="title">Shipping Information</h1>
-                <h3 class="subtitle">Phone Number<em>*</em></h3>
-                <input type="tel" name="phone" class="input" min="6" placeholder="0467985213">
-                <h3 class="subtitle">Street Address<em>*</em></h3>
-                <input type="text" name="street-address" class="input" placeholder= "house,unit/number, street name">
-                <h3 class="subtitle">Suburb<em>*</em></h3>
-                <h3 class="subtitle">Postcode<em>*</em></h3>
-                <h3 class="subtitle">State<em>*</em></h3>
-                <input type="text" name="suburb" class="input" placeholder="suburb">
-                <input type="number" name="postcode" class="input"  minlength="4" maxlength="4" placeholder="3000">
-                <select name="state" class="input">
-                    <option value="" selected>state</option>
-                    <option value="NSW">New South Wales</option>
-                    <option value="QLD">Queensland</option>
-                    <option value="SA">South Australia</option>
-                    <option value="TAS">Tasmania</option>
-                    <option value="VIC">Victoria</option>
-                    <option value="WA">Western Australia</option>
-                </select>
-                <p>login to save your information?</p>
-            </form>
-            <form action="#" class="card-info">
-                <h1 class="title">Payment Information</h1> Information</h1>
-                <h3 class="subtitle">Cardholder Name<em>*</em></h3>
-                <input type="text" name="cardholder-name" id="cardholder-name" class="input" placeholder="john smith">
-                <h3 class="subtitle">Card Number<em>*</em></h3>
-                <input type="tel" id="card-number" class="input" inputmode="numeric" pattern="[0-9\s]{13.19}" autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9876 5432"> 
-                <h3 class="subtitle">Expiry Date<em>*</em></h3>
-                <h3 class="subtitle">CVC<em>*</em></h3>
-                <input type="number" name="month" id="month" class="input" min="01" max="12" placeholder="MM">
-                <h4>|</h4>
-                <input type="number" name="year" id="year" class="input" min="22" max="99" maxlength="2" placeholder="YY">
-                <input type="number" name="cvc" id="cvc" class="input" maxlength="3" minlength="3" placeholder="CVC">
-            </form>
+    <div class="main-body">
+        <div class="order-summary">
+            <h1 class="title">Order Summary</h1>
+            <div class="product-sum">
+                <div class="pro1">
+                    <img src="/images/pennyfarthing.png" alt="penny">
+                    <h1>PENNY FARTHING</h1>
+                    <h1 id="price">$12.00</h1>
+                </div>
+                <div class="pro2">
+                    <img src="/images/australia.png" alt="aus">
+                    <h1>CHOCOLATE AUSTRALIA</h1>
+                    <h1 id="price">$16.00</h1>
+                </div>
+            </div>
+            <div class="total">
+                <h3>Subtotal before gst</h3>
+                <h4>$25.24</h4>
+                <h3>Gst</h3>
+                <h4>$2.76</h4>
+                <h3>Shipping</h3>
+                <h4>$0.00</h4>
+            </div>
+            <div class="foot">
+                <h3 id="total">Total</h2>
+                <h1>$28.00</h1>
+            </div>
+            <button><a href="#">Edit Order</a></button>
+        </div>
+    
+    
+    
+        <div class="info-container">
+            <div class="info-container sidebar">
+                <form action="#" class="customer-info" id="customer-info">
+                    <h1 class="title">Customer Information</h1>
+                    <h3 class="subtitle">First Name<em>*</em></h3>
+                    <input type="text" name="first-name" class="input" placeholder="John">
+                    <h3 class="subtitle">Last Name<em>*</em></h3>
+                    <input type="text" name="last-name" class="input" placeholder="Smith">
+                    <h3 class="subtitle">Email Address <em>*</em></h3>
+                    <input type="email" name="email" class="input" placeholder="john.smith@gmail.com">
+                </form>
+                <form action="#" class="shipping-info">
+                    <h1 class="title">Shipping Information</h1>
+                    <h3 class="subtitle">Phone Number<em>*</em></h3>
+                    <input type="tel" name="phone" class="input" min="6" placeholder="0467985213">
+                    <h3 class="subtitle">Street Address<em>*</em></h3>
+                    <input type="text" name="street-address" class="input" placeholder= "house,unit/number, street name">
+                    <h3 class="subtitle">Suburb<em>*</em></h3>
+                    <h3 class="subtitle">Postcode<em>*</em></h3>
+                    <h3 class="subtitle">State<em>*</em></h3>
+                    <input type="text" name="suburb" class="input" placeholder="suburb">
+                    <input type="number" name="postcode" class="input"  minlength="4" maxlength="4" placeholder="3000">
+                    <select name="state" class="input">
+                        <option value="" selected>state</option>
+                        <option value="NSW">New South Wales</option>
+                        <option value="QLD">Queensland</option>
+                        <option value="SA">South Australia</option>
+                        <option value="TAS">Tasmania</option>
+                        <option value="VIC">Victoria</option>
+                        <option value="WA">Western Australia</option>
+                    </select>
+                    <p>login to save your information?</p>
+                </form>
+                <form action="#" class="card-info">
+                    <h1 class="title">Payment Information</h1> Information</h1>
+                    <h3 class="subtitle">Cardholder Name<em>*</em></h3>
+                    <input type="text" name="cardholder-name" id="cardholder-name" class="input" placeholder="john smith">
+                    <h3 class="subtitle">Card Number<em>*</em></h3>
+                    <input type="tel" id="card-number" class="input" inputmode="numeric" pattern="[0-9\s]{13.19}" autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9876 5432"> 
+                    <h3 class="subtitle">Expiry Date<em>*</em></h3>
+                    <h3 class="subtitle">CVC<em>*</em></h3>
+                    <input type="number" name="month" id="month" class="input" min="01" max="12" placeholder="MM">
+                    <h4>|</h4>
+                    <input type="number" name="year" id="year" class="input" min="22" max="99" maxlength="2" placeholder="YY">
+                    <input type="number" name="cvc" id="cvc" class="input" maxlength="3" minlength="3" placeholder="CVC">
+                </form>
+            </div>
         </div>
     </div>
+
+    
 
     <footer class="footer">
         <img src="/images/footer-logo.svg" alt="logo" class="footer-logo">
