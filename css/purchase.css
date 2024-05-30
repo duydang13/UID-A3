@@ -1,0 +1,97 @@
+@import url(/css/reset.css);
+@import url(/css/footer.css);
+@import url(/css/header.css);
+
+@font-face {
+    font-family: "BodoniPoster";
+    src: url(typefaces/OPTIPosterBodoni-Compr.otf) format('otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bodoni 72 Oldstyle";
+    src: url(typefaces/Bodoni72-OldStyle.ttc) format('ttc');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    background-color: #9184A0;
+    color: #231F23;
+    color: #63596F;
+}
+
+p {
+    font-family: "Bodoni 72 Oldstyle";
+    color: #231F23;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+h1 {
+    color: #231F23;
+    font-family: "OPTIPosterBodoni-Compr";
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 1rem;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-family: "OPTIPosterBodoni-Compr";
+    font-size: 36px;
+    color: #231F23;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main img {
+    width: 100px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    width: 400px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 240px;
+    font-family: "OPTIPosterBodoni-Compr";
+    background-color: #9184A0;
+    border: #231F23 2px solid;
+    border-radius: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #231F23;
+}
+
+
+
+
+
+
+
+
+
+
