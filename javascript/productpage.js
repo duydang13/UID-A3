@@ -1,9 +1,9 @@
 /*creating a list of products, storing them and creating a div for each*/
 document.addEventListener('DOMContentLoaded', function() {
     const product = [
-        { imgSrc: "/images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00" },
-        { imgSrc: "/images/koala.png", alt: "koala", name: "CHOCOLATE KOALA", price: "from $29.95" },
-        { imgSrc: "/images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00" },
+        { id: 0, imgSrc: "/images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00" },
+        { id: 1, imgSrc: "/images/koala.png", alt: "koala", name: "CHOCOLATE KOALA", price: "from $29.95" },
+        { id: 2, imgSrc: "/images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00" },
         { imgSrc: "/images/honey.png", alt: "honey", name: "HONEYCOMB SLAB", price: "$10.00" },
         { imgSrc: "/images/balls.png", alt: "balls", name: "CHOCOLATE GOLF BALLS", price: "$5.50" },
         { imgSrc: "/images/pooh.png", alt: "bear", name: "CARAMEL POOH BEAR", price: "$4.00" },

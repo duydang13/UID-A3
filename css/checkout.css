@@ -1,0 +1,167 @@
+@import url(/css/reset.css);
+@import url(/css/footer.css);
+@import url(/css/header.css);
+
+@font-face {
+    font-family: 'BodoniPoster';
+    src: url(typefaces/OPTIPosterBodoni-Compr.otf) format('otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bodoni 72 Oldstyle";
+    src: url(typefaces/Bodoni72-OldStyle.ttc) format('ttc');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    background-color: #9184A0;
+    color: #231F23;
+    color: #63596F;
+}
+
+p {
+    font-family: "Bodoni 72 Oldstyle";
+    color: #231F23;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+h1 {
+    color: #231F23;
+    font-family: "OPTIPosterBodoni-Compr";
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 1rem;
+}
+
+
+.cart-container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 20px;
+}
+.root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.cart-sidebar{
+    width: 60%;
+    border-radius: 5px;
+    background-color: #9184A0;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.foot{
+    display: flex;
+    border-top: 4px solid #231F23;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.foot h3{
+    font-family: "Bodoni 72 Oldstyle";
+    font-size: 24px;
+    font-weight: bold;
+    color: #231F23;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-bar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-bar li {
+        margin-right: 0;
+    }
+
+    .menu-bar li a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        padding-right: 0;
+    }
+
+    .button {
+        font-size: 24px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #intro-para {
+        width: 100%;
+        border: none;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .bestsellers-container, .our-collections-container,
+    .set-bundles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu-bar li a {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
