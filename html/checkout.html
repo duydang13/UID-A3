@@ -75,8 +75,17 @@
                 <p>login to save your information?</p>
             </form>
             <form action="#" class="card-info">
-                <h1 class="title">Card Information</h1>
-                <h3 class="subtitle">Cardholder Name</h3>
+                <h1 class="title">Payment Information</h1> Information</h1>
+                <h3 class="subtitle">Cardholder Name<em>*</em></h3>
+                <input type="text" name="cardholder-name" id="cardholder-name" class="input" placeholder="john smith">
+                <h3 class="subtitle">Card Number<em>*</em></h3>
+                <input type="tel" id="card-number" class="input" inputmode="numeric" pattern="[0-9\s]{13.19}" autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9876 5432"> 
+                <h3 class="subtitle">Expiry Date<em>*</em></h3>
+                <h3 class="subtitle">CVC<em>*</em></h3>
+                <input type="number" name="month" id="month" class="input" min="01" max="12" placeholder="MM">
+                <h4>|</h4>
+                <input type="number" name="year" id="year" class="input" min="22" max="99" maxlength="2" placeholder="YY">
+                <input type="number" name="cvc" id="cvc" class="input" maxlength="3" minlength="3" placeholder="CVC">
             </form>
         </div>
     </div>
