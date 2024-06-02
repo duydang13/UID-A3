@@ -89,26 +89,6 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-}
-
-
-@media (max-width: 600px){
-    .cart-sidebar{
-        width: 100%;
-        max-width: none;
-    }
-
-    .cart-item{
-        flex-direction: column;
-        flex-direction: column;
-    }
-
-    .prices-main, .quantity, .pro-img {
-        font-size: 40px;
-    }
-}
-
-.cart-item-container {
     margin-right: 20px;
     margin-left: 20px;
 }

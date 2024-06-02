@@ -38,8 +38,6 @@
         </div>
     </nav>
 
-    <button onclick="window.history.back()" class="back-button"><img src="/images/Group 5.svg" alt="back-button"></button>
-
     <div class="cart-container hidden" id="cart-container">
         <div class="cart-sidebar">
             <button class="close" id="close"><img src="/images/X.svg" alt="close"></button>
@@ -111,6 +109,8 @@
         });
     </script>
 
+    <button onclick="window.history.back()" class="back-button"><img src="/images/Group 5.svg" alt="back-button"></button>
+
     <div class="main-body">
         <div class="order-summary">
             <h1 class="heading">Order Summary</h1>
@@ -140,9 +140,6 @@
             </div>
             <button><a href="#">Edit Order</a></button>
         </div>
-    
-    
-    
         <div class="info-container">
             <div class="info-container sidebar">
                 <form action="#" class="customer-info" id="customer-info">
@@ -161,10 +158,10 @@
                     <h3 class="subtitle">Street Address<em>*</em></h3>
                     <input type="text" name="street-address" class="input" placeholder= "house,unit/number, street name">
                     <h3 class="subtitle">Suburb<em>*</em></h3>
-                    <h3 class="subtitle">Postcode<em>*</em></h3>
-                    <h3 class="subtitle">State<em>*</em></h3>
                     <input type="text" name="suburb" class="input" placeholder="suburb">
+                    <h3 class="subtitle">Postcode<em>*</em></h3>
                     <input type="number" name="postcode" class="input"  minlength="4" maxlength="4" placeholder="3000">
+                    <h3 class="subtitle">State<em>*</em></h3>
                     <select name="state" class="input">
                         <option value="" selected>state</option>
                         <option value="NSW">New South Wales</option>
@@ -183,10 +180,9 @@
                     <h3 class="subtitle">Card Number<em>*</em></h3>
                     <input type="tel" id="card-number" class="input" inputmode="numeric" pattern="[0-9\s]{13.19}" autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9876 5432"> 
                     <h3 class="subtitle">Expiry Date<em>*</em></h3>
-                    <h3 class="subtitle">CVC<em>*</em></h3>
                     <input type="number" name="month" id="month" class="input" min="01" max="12" placeholder="MM">
-                    <h4>|</h4>
                     <input type="number" name="year" id="year" class="input" min="22" max="99" maxlength="2" placeholder="YY">
+                    <h3 class="subtitle">CVC<em>*</em></h3>
                     <input type="number" name="cvc" id="cvc" class="input" maxlength="3" minlength="3" placeholder="CVC">
                 </form>
             </div>

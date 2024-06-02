@@ -42,9 +42,13 @@ h1 {
     margin: 1rem;
 }
 
+
+
 .back-button {
     background-color: #9184A0;
     border: none;
+    margin-top: 75px;
+    margin-left: 20px;
 }
 
 
@@ -104,7 +108,7 @@ h1 {
     margin-right: 20px;
 }
 
-.total h3{
+.total h3 {
     font-family: "Bodoni 72 Oldstyle";
     font-weight: bold;
     font-size: 20px;
@@ -280,7 +284,17 @@ input::placeholder{
     .button {
         font-size: 20px;
     }
+
+    .main-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-summary {
+        border-right: none;
+    }
 }
+
 
 
 

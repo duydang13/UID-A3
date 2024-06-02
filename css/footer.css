@@ -2,6 +2,8 @@ footer {
     background-color: #231F23;
     height: 250px;
     position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-logo {
