@@ -1,6 +1,7 @@
 @import url(/css/reset.css);
 @import url(/css/footer.css);
 @import url(/css/header.css);
+@import url(/css/cart.css);
 
 @font-face {
     font-family: "BodoniPoster";
@@ -47,149 +48,8 @@ h1 {
 }
 
 
-.close {
-    background-color: #9184A0;
-    border: none;
-    align-self: flex-start;
-}
 
 
-
-.root{
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
-}
-
-.cart-sidebar{
-    background-color: #9184A0;
-    margin-left: 20px;
-}
-
-.foot h3{
-    font-family: "Bodoni 72 Oldstyle";
-    font-size: 24px;
-    font-weight: bold;
-    color: #231F23;
-}
-
-.cart-button {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    font-family: "OPTIPosterBodoni-Compr";
-}
-
-.button1 {
-    background-color: #9184A0;
-    border: #231F23 2px solid;
-    border-radius: 30px;
-    font-family: "OPTIPosterBodoni-Compr";
-    font-size: 40px;
-    color: #231F23;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.button2 {
-    background-color: #231F23;
-    border-radius: 30px;
-    border: none;
-}
-
-.button2 a {
-    font-family: "OPTIPosterBodoni-Compr";
-    font-size: 40px;
-    color: #9184A0;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.cart-item-container, .cart-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cart-item-container {
-    margin-right: 20px;
-}
-
-
-/* styling the individual cart item*/
-.cart-item {
-    display: flex;
-    flex-direction: row;
-    border-bottom: #231F23 4px solid;
-    padding: 20px;
-}
-
-.pro-img{
-    height: 150px;
-    border: #231F23 4px solid;
-    padding: 20px;
-}
-
-.cart-item h1 {
-    font-size: 36px;
-    margin-top: 0;
-    border-bottom:#231F23 4px solid;
-}
-
-.cart-item h2, h3{
-    font-family: "Bodoni 72 Oldstyle";
-    font-size: 24px;
-    color: #231F23;
-    font-weight: bold;
-}
-
-.cart-details {
-    display: flex;
-    flex-direction: row;
-}
-
-.prices-main {
-    font-size: 80px;
-    border-bottom: #231F23 4px solid;
-    margin:0;
-}
-
-.quantity-section{
-    padding-top: 10px;
-    margin-right: 40px;
-    margin-left: 20px;
-}
-
-.minus-increment, .plus-increment {
-    background-color:#9184A0;
-    border: none;
-}
-
-.minus-increment img, .plus-increment img{
-    width: 75%;
-}
-
-.quantity{
-    background-color: #9184A0;
-    border: #231F23 2px solid;
-    font-family: "OPTIPosterBodoni-Compr" ;
-    font-size: 60px;
-    width: 75px;
-    color: #231F23;
-    text-align: center;
-}
-
-#quantity {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.left {
-    border-left: #231F23 4px solid;
-    padding-left: 20px;
-}
 
 
 

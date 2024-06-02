@@ -92,3 +92,8 @@
     padding-left: 1rem;
     width: 2rem;
 }
+
+.menu-icon button {
+    background-color: #9184A0;
+    border: none;
+}

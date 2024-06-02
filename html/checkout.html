@@ -33,17 +33,17 @@
             </div>
             <div class="menu-icon">
                 <img src="/images/search.svg" alt="search">
-                <img src="/images/cart.svg" alt="cart">
+                <button id="cart-icon"><img src="/images/cart.svg" alt="cart"></button>
             </div>
         </div>
     </nav>
 
     <button onclick="window.history.back()" class="back-button"><img src="/images/Group 5.svg" alt="back-button"></button>
 
-    <div class="cart-container">
-        <button class="close"><img src="/images/X.svg" alt="close"></button>
-        <div id="root"></div>
+    <div class="cart-container hidden" id="cart-container">
         <div class="cart-sidebar">
+            <button class="close" id="close"><img src="/images/X.svg" alt="close"></button>
+            <div id="root"></div>
             <div class="head"><h1>YOUR CART</h1></div>
             <div class="cart-item-container">
                 <div class="cart-item">
@@ -87,7 +87,6 @@
                     </div> 
                 </div>
             </div>
-        </div>
             <div class="foot">
                 <h3>Subtotal</h3>
                 <h1>$28.00</h1>
@@ -99,7 +98,18 @@
         </div>
     </div>
 
-<script src="/javascript/addtocart.js"></script>
+    <script>
+        document.getElementById('cart-icon').addEventListener('click', function(){
+            let cartContainer = document.getElementById('cart-container');
+            cartContainer.classList.toggle('visible');
+            cartContainer.classList.toggle('hidden');
+        });
+        document.getElementById('close').addEventListener('click', function(){
+            let cartContainer = document.getElementById('cart-container');
+            cartContainer.classList.toggle('hidden');
+            cartContainer.classList.toggle('visible');
+        });
+    </script>
 
     <div class="main-body">
         <div class="order-summary">
