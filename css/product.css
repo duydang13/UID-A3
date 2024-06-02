@@ -42,7 +42,10 @@ h1 {
 
 }
 
-
+.back-button {
+    background-color: #9184A0;
+    border: none;
+}
 
 /*styling the product section*/
 .product-main {

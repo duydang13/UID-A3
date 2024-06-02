@@ -1,9 +1,9 @@
 /*creating a list of products, storing them and creating a div for each*/
 document.addEventListener('DOMContentLoaded', function() {
     const product = [
-        { id: 0, imgSrc: "/images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00" },
+        { id: 0, imgSrc: "/images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00", link: "/html/productpage1.html"},
         { id: 1, imgSrc: "/images/koala.png", alt: "koala", name: "CHOCOLATE KOALA", price: "from $29.95" },
-        { id: 2, imgSrc: "/images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00" },
+        { id: 2, imgSrc: "/images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00", link: "/html/productpage2.html" },
         { id: 3, imgSrc: "/images/honey.png", alt: "honey", name: "HONEYCOMB SLAB", price: "$10.00" },
         { id: 4, imgSrc: "/images/balls.png", alt: "balls", name: "CHOCOLATE GOLF BALLS", price: "$5.50" },
         { id: 5, imgSrc: "/images/pooh.png", alt: "bear", name: "CARAMEL POOH BEAR", price: "$4.00" },
@@ -16,20 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const productContainer = document.getElementById('product-container');
-    const cartPopup = document.getElementById('cart-popup');
-    const cartItemsContainer = document.getElementById('cart-items');
-    const closeBtn= document.getElementsByClassName('close') [0];
-    const checkoutBtn= document.getElementById('checkout-button');
-    const cartIcon = document.getElementById('cart-icon');
-    let cart = [];
-
 
     function createProductCard(){
         product.forEach(product => {
             const productCard= document.createElement('div');
             productCard.classList.add('product-card');
+
+            const imgElement = product.link
+                ? `<a href="${product.link}"><img src="${product.imgSrc}" alt="${product.alt}"></a>`
+                : `<img src="${product.imgSrc}" alt="${product.alt}">`;
+            
             productCard.innerHTML=`
-                <img src="${product.imgSrc}" alt="${product.alt}">
+                ${imgElement}
                 <div class="product-card-des">
                     <h2 class="name-description">${product.name.replace(" ", "<br>")}</h2>
                     <h2 class="prices">${product.price}</h2>
