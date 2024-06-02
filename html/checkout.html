@@ -8,7 +8,8 @@
 </head>
 <body>
     <nav class="header">
-        <a href="/html/homepage.html"><img src="/images/logo.png" alt="logo" class="logo"></a>
+        <div><button id="menu-icon"><img src="/images/burger.svg" alt="menu-icon"></button></div>
+        <div><a href="/html/homepage.html"><img src="/images/logo.png" alt="logo" class="logo"></a></div>
         <div>
                 <ul class="menu-bar"> 
                     <li>
@@ -31,12 +32,21 @@
                     <li><a href="#">OUR STORY</a></li>
                 </ul>
             </div>
-            <div class="menu-icon">
+        <div class="menu-icon">
                 <img src="/images/search.svg" alt="search">
                 <button id="cart-icon"><img src="/images/cart.svg" alt="cart"></button>
-            </div>
+        </div>
         </div>
     </nav>
+
+    <!--<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('menu-icon').addEventListener('click', function() {
+                const menuBar = document.querySelector('.menu-bar');
+                menuBar.classList.toggle('show');
+            });
+        });
+    </script>-->
 
     <div class="cart-container hidden" id="cart-container">
         <div class="cart-sidebar">

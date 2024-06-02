@@ -2,7 +2,8 @@
 
 .header {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -12,6 +13,13 @@
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 0px 5px 7px rgba(0,0,0,0.25);
+}
+
+#menu-icon{
+    background-color: #9184A0;
+    border: none;
+    display: none;
+    cursor: pointer;
 }
 
 .logo {
@@ -54,34 +62,14 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: #9184A0;
     display: none;
     min-width: 150px;
-}
-
-.dropdown > li {
-    border-bottom: 1px solid #444;
-}
-
-.dropdown > li:last-child {
-    border-bottom: none;
-}
-
-.dropdown > li > a {
-    padding: 10px 15px;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-}
-
-.dropdown > li > a:hover {
-    background-color: #555;
 }
 
 .menu > li:hover .dropdown {
     display: block;
 }
-
 
 
 .menu-icon {
@@ -97,29 +85,43 @@
 .menu-icon button {
     background-color: #9184A0;
     border: none;
+    cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .menu-bar ul {
+
+@media (max-width: 768px) {
+    .header{
+        flex-direction: row;
+    }
+    .menu-bar{
+        display: none;
         flex-direction: column;
         width: 100%;
     }
 
-    .menu-bar li {
-        margin-right: 0;
+    .menu-bar.show{
+        display: flex;
+        background-color: #231F23;
     }
 
-    .menu-bar li a {
-        font-size: 20px;
+    .menu-bar > li {
+        width: 100%;
+        border-bottom:#9184A0 4px solid;
+        border-right: none;
     }
 
-    .menu-icon {
-        padding-right: 0;
+    .menu-bar > li > a {
+        font-size: 1.5rem;
+        padding: 0.625rem 1.25rem;
+    }
+
+    .menu-bar > li:hover > a {
+        background-color: #63596F;
+    }
+
+    #menu-icon {
+        display: block;
     }
 
     .button {
@@ -128,6 +130,10 @@
         padding: 10px 20px;
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .header {
+        padding-right: 40px;
     }
 }
 
@@ -154,4 +160,5 @@
         font-size: 20px;
     }
 }
+
 
