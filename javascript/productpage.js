@@ -68,67 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }
 
-function addToCart(productId){
-    const product= products.find(p => p.id === productId);
-    if (product){
-        cart.push(product);
-        displayCart();
-        showCartPopup();
-    }
-}
-
-function displayCart(){
-    cartItemsContainer.innerHTML='';
-    cart.forEach(item => {
-        const cartItem= document.createElement('div');
-        cartItem.classList.add('cart-item');
-        cartItem.innerHTML = `
-            <img src="${item.imgSrc}" alt="${item.alt}" class="cart-item-img">
-            <div class="cart-item-details">
-                <h2 class="cart-item-name">${item.name}</h2>
-                <h2 class="cart-item-price">${item.price}</h2>
-            </div>
-            `;
-        cartItemsContainer.appendChild(cartItem);
-    });
-}
-
-function showCartPopup(){
-    cartPopup.style.display = 'block';
-}
-
-function hideCartPopup(){
-    cartPopup.style.display = 'none';
-}
-
 createProductCard(product);
 hideProducts();
-
-document.body.addEventListener('click', function(event){
-    if (event.target.classList.contains('add-cart')){
-        const productId= parseInt(event.target.getAttribute('data-id'));
-        addToCart(productId);
-    }
-});
-
-closeBtn.onclick - function(){
-    hideCartPopup();
-}
-
-window.onclick = function(event){
-    if (event.target === cartPopup){
-        hideCartPopup;
-    }
-}
-
-checkoutBtn.onclick = function(){
-    alert('Proceed to checkout');
-    hideCartPopup();
-}
-
-cartIcon.onclick = function(){
-    showCartPopup();
-}
 
 });
 
