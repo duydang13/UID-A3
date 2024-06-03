@@ -1,18 +1,18 @@
 /*creating a list of products, storing them and creating a div for each*/
 document.addEventListener('DOMContentLoaded', function() {
     const product = [
-        { id: 0, imgSrc: "/images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00", link: "../html/productpage1.html"},
-        { id: 1, imgSrc: "/images/koala.png", alt: "koala", name: "CHOCOLATE KOALA", price: "from $29.95" },
-        { id: 2, imgSrc: "/images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00", link: "../html/productpage2.html" },
-        { id: 3, imgSrc: "/images/honey.png", alt: "honey", name: "HONEYCOMB SLAB", price: "$10.00" },
-        { id: 4, imgSrc: "/images/balls.png", alt: "balls", name: "CHOCOLATE GOLF BALLS", price: "$5.50" },
-        { id: 5, imgSrc: "/images/pooh.png", alt: "bear", name: "CARAMEL POOH BEAR", price: "$4.00" },
-        { id: 6, imgSrc: "/images/buttons.png", alt: "buttons", name: "CHOCOLATE BUTTONS", price: "from $6.95" },
-        { id: 7, imgSrc: "/images/kangaroos.png", alt: "kangaroo", name: "KANGAROO'S & KOALA'S", price: "$4.00" },
-        { id: 8,imgSrc: "/images/circus.png", alt: "circus", name: "CHOCOLATE CIRCUS", price: "$4.50" },
-        { id: 9, imgSrc: "/images/transport.png", alt: "tranpsort", name: "CHOCOLATE TRANSPORT", price: "$4.50" },
-        { id: 10,imgSrc: "/images/caramel.png", alt: "caramel", name: "CARAMEL FILLED BAR", price: "$6.00" },
-        { id: 11, imgSrc: "/images/speckle.png", alt: "speckle", name: "CHOCOLATE SPECKLE XXL", price: "$12.00" },
+        { id: 0, imgSrc: "../images/pennyfarthing.png", alt: "penny", name: "PENNY FARTHING", price: "$12.00", link: "../html/productpage1.html"},
+        { id: 1, imgSrc: "../images/koala.png", alt: "koala", name: "CHOCOLATE KOALA", price: "from $29.95" },
+        { id: 2, imgSrc: "../images/australia.png", alt: "australia", name: "CHOCOLATE AUSTRALIA", price: "$16.00", link: "../html/productpage2.html" },
+        { id: 3, imgSrc: "../images/honey.png", alt: "honey", name: "HONEYCOMB SLAB", price: "$10.00" },
+        { id: 4, imgSrc: "../images/balls.png", alt: "balls", name: "CHOCOLATE GOLF BALLS", price: "$5.50" },
+        { id: 5, imgSrc: "../images/pooh.png", alt: "bear", name: "CARAMEL POOH BEAR", price: "$4.00" },
+        { id: 6, imgSrc: "../images/buttons.png", alt: "buttons", name: "CHOCOLATE BUTTONS", price: "from $6.95" },
+        { id: 7, imgSrc: "../images/kangaroos.png", alt: "kangaroo", name: "KANGAROO'S & KOALA'S", price: "$4.00" },
+        { id: 8,imgSrc: "../images/circus.png", alt: "circus", name: "CHOCOLATE CIRCUS", price: "$4.50" },
+        { id: 9, imgSrc: "../images/transport.png", alt: "tranpsort", name: "CHOCOLATE TRANSPORT", price: "$4.50" },
+        { id: 10,imgSrc: "../images/caramel.png", alt: "caramel", name: "CARAMEL FILLED BAR", price: "$6.00" },
+        { id: 11, imgSrc: "../images/speckle.png", alt: "speckle", name: "CHOCOLATE SPECKLE XXL", price: "$12.00" },
     ];
 
     const productContainer = document.getElementById('product-container');

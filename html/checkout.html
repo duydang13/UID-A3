@@ -8,7 +8,6 @@
 </head>
 <body>
     <nav class="header">
-        <div><button id="menu-icon"><img src="../images/burger.svg" alt="menu-icon"></button></div>
         <div><a href="../index.html"><img src="../images/logo.png" alt="logo" class="logo"></a></div>
         <div>
                 <ul class="menu-bar"> 
@@ -33,7 +32,8 @@
                 </ul>
             </div>
         <div class="menu-icon">
-                <img src="../images/search.svg" alt="search">
+                <button id="menu-icon"><img src="../images/burger.svg" alt="menu-icon"></button>
+                <img src="../images/search.svg" alt="search" id="search">
                 <button id="cart-icon"><img src="../images/cart.svg" alt="cart"></button>
         </div>
         </div>
@@ -102,18 +102,7 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById('cart-icon').addEventListener('click', function(){
-            let cartContainer = document.getElementById('cart-container');
-            cartContainer.classList.toggle('visible');
-            cartContainer.classList.toggle('hidden');
-        });
-        document.getElementById('close').addEventListener('click', function(){
-            let cartContainer = document.getElementById('cart-container');
-            cartContainer.classList.toggle('hidden');
-            cartContainer.classList.toggle('visible');
-        });
-    </script>
+    <script src="../javascript/cartpopup.js"></script>
 
     <button onclick="window.history.back()" class="back-button"><img src="../images/Group 5.svg" alt="back-button"></button>
 

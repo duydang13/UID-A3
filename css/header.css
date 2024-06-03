@@ -90,9 +90,13 @@
 
 
 @media (max-width: 768px) {
-    .header{
-        flex-direction: row;
+    .header {
+        flex-wrap: nowrap;
+        padding-right: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
     }
+
     .menu-bar{
         display: none;
         flex-direction: column;
@@ -121,6 +125,10 @@
 
     #menu-icon {
         display: block;
+    }
+
+    #search {
+        display: none;
     }
 
     .button {

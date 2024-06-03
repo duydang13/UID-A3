@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="header">
-        <a href="../index.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
+        <div><a href="../index.html"><img src="../images/logo.png" alt="logo" class="logo"></a></div>
         <div>
                 <ul class="menu-bar"> 
                     <li>
@@ -31,12 +31,69 @@
                     <li><a href="#">OUR STORY</a></li>
                 </ul>
             </div>
-            <div class="menu-icon">
-                <img src="../images/search.svg" alt="search">
-                <img src="../images/cart.svg" alt="cart">
-            </div>
+        <div class="menu-icon">
+                <button id="menu-icon"><img src="../images/burger.svg" alt="menu-icon"></button>
+                <img src="../images/search.svg" alt="search" id="search">
+                <button id="cart-icon"><img src="../images/cart.svg" alt="cart"></button>
+        </div>
         </div>
     </nav>
+
+    <div class="cart-container hidden" id="cart-container">
+        <div class="cart-sidebar">
+            <button class="close" id="close"><img src="../images/X.svg" alt="close"></button>
+            <div id="root"></div>
+            <div class="head"><h1>YOUR CART</h1></div>
+            <div class="cart-item-container">
+                <div class="cart-item">
+                    <img src="../images/pennyfarthing.png" alt="penny" class="pro-img">
+                    <div class="cart-details-container">
+                        <h1>PENNY FARTHING</h1>
+                        <div class="cart-details">
+                            <div class="quantity-section">
+                                <h3 id="quantity">Quantity</h3>
+                                <input class="quantity" min="0" type="number" name="quantity" value="1">
+                            </div>
+                            <div class="left">
+                                <h2>Price</h2>
+                                <h1 class="prices-main">$12.00</h1>
+                                <h2>Total</h2>
+                                <h1 class="prices-main">$12.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="../images/australia.png" alt="australia" class="pro-img">
+                    <div class="cart-details-container">
+                        <h1>CHOCOLATE AUSTRALIA</h1>
+                        <div class="cart-details">
+                            <div class="quantity-section">
+                                <h3 id="quantity">Quantity</h3>
+                                <input class="quantity" min="0" type="number" name="quantity" value="1">
+                            </div>
+                            <div class="left">
+                                <h2>Price</h2>
+                                <h1 class="prices-main">$16.00</h1>
+                                <h2>Total</h2>
+                                <h1 class="prices-main">$16.00</h1>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="foot">
+                <h3>Subtotal</h3>
+                <h1>$28.00</h1>
+            </div>
+            <div class="cart-button">
+                <button class="button1">Clear Cart</button>
+                <button class="button2"><a href="../html/checkout.html">Checkout</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/cartpopup.js"></script>
 
     <section class="our-collections">
         <h1>Set/Bundles</h1>
