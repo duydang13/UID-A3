@@ -69,30 +69,38 @@ h1{
 
 .product-card {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr auto;
     border: 2px solid #231F23; 
-    margin: 15px auto;
+    margin: 5px;
     width: 17rem; 
+    height: 20rem;
+    box-sizing: border-box;
 }
 
 .product-card img {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     max-width: 75%;
-    max-height: 75%;
-    align-items: center;
+    max-height: 12rem;
+    object-fit: contain;
+    padding: 20px;
 }
 
 .product-card-des {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
     border-top: 2px solid #231F23;
+    box-sizing: border-box;
 }
 
-.name-description, .arrow {
+.name-description{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .name-description, .prices {
@@ -108,7 +116,9 @@ h1{
 
 .prices {
     padding-left: 1rem;
+    padding-right: 5px;
     align-content: center;
+    text-align: right;
 }
 
 /*styling the see more button*/

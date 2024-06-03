@@ -56,6 +56,15 @@ h1 {
     padding-bottom: 2rem;
 }
 
+.collection-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
 
 .description {
     margin: 20px;
@@ -74,15 +83,21 @@ h1 {
 
 .product-card img {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     max-width: 75%;
-    max-height: 75%;
-    align-items: center;
+    max-height: 12rem;
+    object-fit: contain;
+    padding: 20px;
 }
 
 .product-card-des {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
     border-top: 2px solid #231F23;
+    box-sizing: border-box;
 }
 
 .name-description, .arrow {
@@ -95,21 +110,21 @@ h1 {
 .name-description, .prices {
     font-family: OPTIPosterBodoni-Compr;
     color: #231F23;
-    font-size: 2rem;
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .name-description {
     text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
-.prices, .arrow {
-    padding-left: 1rem;
-    align-content: center;
-}
-
-.arrow {
-    width: 75px;
-    border-left: #231F23 2px solid;
+.prices {
+    text-align: right;
+    padding-top: 10px;
 }
 
 

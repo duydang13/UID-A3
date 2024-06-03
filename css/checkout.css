@@ -134,7 +134,7 @@ h1 {
     margin-right: 0;
 }
 
-.order-summary button{
+#edit-order{
     font-family: "OPTIPosterBodoni-Compr";
     font-size:24px;
     margin: 20px;
@@ -143,13 +143,14 @@ h1 {
     padding: 5px;
     background-color: #9184A0;
     width: 120px;
+    cursor: pointer;
 }
 
-.order-summary a {
-    text-decoration: none;
-    color: #231F23;
+#edit-order:hover{
+    background-color: #63596F;
 }
 
+.order-summary
 /*styling the form on right hand side*/
 .info-container{
     width: 100%;
@@ -198,7 +199,7 @@ input::placeholder{
 }
 
 .info-container button>a{
-    font-size: 48px;
+    font-size: 40px;
     text-decoration: none;
     color: #9184A0;
 }
