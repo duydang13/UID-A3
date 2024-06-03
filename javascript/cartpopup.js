@@ -9,3 +9,10 @@
             cartContainer.classList.toggle('hidden');
             cartContainer.classList.toggle('visible');
         });
+        document.getElementById('add-cart').addEventListener('click', function(){
+            let cartContainer = document.getElementById('cart-container');
+            cartContainer.classList.toggle('hidden');
+            cartContainer.classList.toggle('visible');
+        });
+
+        
