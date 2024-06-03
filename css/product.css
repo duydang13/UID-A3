@@ -281,7 +281,7 @@ h3 {
 
 .product-sug {
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     margin-bottom: 20px;
 }
 
