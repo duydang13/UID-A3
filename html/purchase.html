@@ -41,24 +41,24 @@
 
     <div class="cart-container hidden" id="cart-container">
         <div class="cart-sidebar">
-            <button class="close" id="close"><img src="../images/X.svg" alt="close"></button>
-            <div id="root"></div>
-            <div class="head"><h1>YOUR CART</h1></div>
+            <button class="close-cart" id="close-cart"><img src="../images/X.svg" alt="close"></button>
+            <div id="root-cart"></div>
+            <div class="head-cart"><h1>YOUR CART</h1></div>
             <div class="cart-item-container">
                 <div class="cart-item">
                     <img src="../images/pennyfarthing.png" alt="penny" class="pro-img">
                     <div class="cart-details-container">
                         <h1>PENNY FARTHING</h1>
                         <div class="cart-details">
-                            <div class="quantity-section">
-                                <h3 id="quantity">Quantity</h3>
-                                <input class="quantity" min="0" type="number" name="quantity" value="1">
+                            <div class="quantity-section-cart">
+                                <h3 id="quantity-cart">Quantity</h3>
+                                <input class="quantity-cart" min="0" type="number" name="quantity" value="1">
                             </div>
-                            <div class="left">
+                            <div class="left-cart">
                                 <h2>Price</h2>
-                                <h1 class="prices-main">$12.00</h1>
+                                <h1 class="prices-main-cart">$12.00</h1>
                                 <h2>Total</h2>
-                                <h1 class="prices-main">$12.00</h1>
+                                <h1 class="prices-main-cart">$12.00</h1>
                             </div>
                         </div>
                     </div>
@@ -68,43 +68,30 @@
                     <div class="cart-details-container">
                         <h1>CHOCOLATE AUSTRALIA</h1>
                         <div class="cart-details">
-                            <div class="quantity-section">
-                                <h3 id="quantity">Quantity</h3>
-                                <input class="quantity" min="0" type="number" name="quantity" value="1">
+                            <div class="quantity-section-cart">
+                                <h3 id="quantity-cart">Quantity</h3>
+                                <input class="quantity-cart" min="0" type="number" name="quantity" value="1">
                             </div>
-                            <div class="left">
+                            <div class="left-cart">
                                 <h2>Price</h2>
-                                <h1 class="prices-main">$16.00</h1>
+                                <h1 class="prices-main-cart">$16.00</h1>
                                 <h2>Total</h2>
-                                <h1 class="prices-main">$16.00</h1>
+                                <h1 class="prices-main-cart">$16.00</h1>
                             </div>
                         </div>
                     </div> 
                 </div>
             </div>
-            <div class="foot">
+            <div class="foot-cart">
                 <h3>Subtotal</h3>
                 <h1>$28.00</h1>
             </div>
             <div class="cart-button">
-                <button class="button1">Clear Cart</button>
-                <button class="button2"><a href="../html/checkout.html">Checkout</a></button>
+                <button class="button1-cart">Clear Cart</button>
+                <button class="button2-cart"><a href="../html/checkout.html">Checkout</a></button>
             </div>
         </div>
     </div>
-
-    <script>
-        document.getElementById('cart-icon').addEventListener('click', function(){
-            let cartContainer = document.getElementById('cart-container');
-            cartContainer.classList.toggle('visible');
-            cartContainer.classList.toggle('hidden');
-        });
-        document.getElementById('close').addEventListener('click', function(){
-            let cartContainer = document.getElementById('cart-container');
-            cartContainer.classList.toggle('hidden');
-            cartContainer.classList.toggle('visible');
-        });
-    </script>
 
     <script src="../javascript/cartpopup.js"></script>
 

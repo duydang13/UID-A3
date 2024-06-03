@@ -46,7 +46,7 @@ h1 {
 
 /*styling the banner section*/
 .banner-image-container, .bestsellers-container,
-.our-collections-container, .introduction {
+.our-collections-container, .introduction, .set-bundles-container {
     border-bottom: 4px solid #231F23;
     padding-bottom: 3rem;
     margin-left: 20px;
@@ -104,7 +104,7 @@ h1 {
 .set-bundles-container {
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 10px;
 }
@@ -163,13 +163,19 @@ h1 {
     .introduction {
         flex-direction: column;
         padding: 1rem;
+        justify-content: center;
     }
 
     #intro-para {
         width: 100%;
         border: none;
         padding-right: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 20px;
+        border-bottom: #231F23 4px solid;
+        padding-bottom: 20px;
+    }
+    .button1 {
+        margin: 0;
     }
 
     .bestsellers-container, .our-collections-container,
@@ -180,6 +186,7 @@ h1 {
 
     .product-card {
         width: 100%;
+
     }
 }
 
